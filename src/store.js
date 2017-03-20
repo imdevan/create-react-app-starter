@@ -12,6 +12,9 @@ import rootReducer from './reducers/index';
 
 // create an object for the default data
 const defaultState = {
+  ui: {
+    loaded: false
+  }
 };
 
 // Dev tools

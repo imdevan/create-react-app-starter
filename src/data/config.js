@@ -5,7 +5,7 @@ const project = {
 
 project.description = `${project.title} description`;
 
-export project;
+export {project};
 
 export const server = {
   url: 'http://localhost:8081',

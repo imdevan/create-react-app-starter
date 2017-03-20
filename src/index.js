@@ -8,6 +8,7 @@ import './styles/index.scss';
 
 // Import Components
 import App from './views/App';
+import Home from './views/Home';
 
 // import react router deps
 import { Router, Route, IndexRoute } from 'react-router';
@@ -18,6 +19,7 @@ const router = (
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
+      <IndexRoute component={Home}></IndexRoute>
       </Route>
     </Router>
   </Provider>

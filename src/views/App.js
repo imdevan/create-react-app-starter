@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import actionCreators from '../actions/actionCreators'
 
 // Components
-import Head from './components/Head';
+import Head from '../components/Head';
 
 const Main = React.createClass({
   handleClick() {
@@ -34,13 +34,7 @@ const Main = React.createClass({
 
 function mapStateToProps(state) {
   return {
-    surveys: state.surveys,
-    survey: state.survey,
-    questions: state.questions,
-    question: state.question,
-    background: state.background,
-    history: state.history,
-    user: state.user
+    ui: state.ui
   }
 }
 
